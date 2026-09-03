@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Línea del tiempo de la Tecnología de la Información</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #1f2937;
+      background: #f4f4f4;
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 1000px;
+      margin: 32px auto;
+      background: white;
+      padding: 60px 70px;
+      box-shadow: 0 2px 14px rgba(0,0,0,.10);
+    }
+    h2 {
+      font-size: 23px;
+      margin-top: 36px;
+      border-bottom: 1px solid #bbb;
+      padding-bottom: 8px;
+    }
+    h3 { margin-bottom: 8px; }
+    .intro { text-align: justify; }
+    .timeline {
+      position: relative;
+      margin: 45px 0;
+      padding-left: 35px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #374151;
+    }
+    .event {
+      position: relative;
+      margin: 0 0 35px;
+      padding: 20px 24px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+    .event::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 25px;
+      width: 14px;
+      height: 14px;
+      background: white;
+      border: 3px solid #374151;
+      border-radius: 50%;
+    }
+    .year {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .event h3 { font-size: 19px; margin-top: 3px; }
+    .connection {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
+      font-style: italic;
+    }
+    .references p {
+      padding-left: 36px;
+      text-indent: -36px;
+      margin: 14px 0;
+    }
+    footer {
+      margin-top: 45px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+    }
+    @media (max-width: 700px) {
+      .page { margin: 0; padding: 35px 25px; }
+    }
+    @media print {
+      body { background: white; }
+      .page { box-shadow: none; margin: 0; max-width: none; }
+      .event { break-inside: avoid; }
+    }
+  </style>
+</head>
+
+<body>
+<main class="page">
+
+  <section>
+    <h2>Introducción</h2>
+    <p class="intro">
+      La Tecnología de la Información (TI) es el resultado de un proceso acumulativo:
+      cada avance permitió resolver limitaciones de la etapa anterior y abrió nuevas
+      posibilidades para el siguiente desarrollo. La reducción del tamaño de los
+      componentes electrónicos hizo posible fabricar computadoras más rápidas y
+      accesibles; los microprocesadores llevaron esa capacidad a equipos personales;
+      las redes permitieron conectar esos equipos; la World Wide Web facilitó el acceso
+      a información; y posteriormente la movilidad, la nube, el Internet de las cosas
+      y la inteligencia artificial ampliaron la capacidad de procesar, almacenar,
+      compartir y utilizar información.
+    </p>
+    <p class="intro">
+      Por ello, esta línea del tiempo no presenta los acontecimientos como hechos
+      aislados. En cada etapa se explica qué aportó la tecnología y, principalmente,
+      cómo ese aporte ayudó a construir la siguiente generación de herramientas de
+      información.
+    </p>
+
+    <h2>Línea del tiempo</h2>
+
+    <div class="timeline">
+
+      <article class="event">
+        <span class="year">1833</span>
+        <h3>Máquina Analítica de Charles Babbage</h3>
+        <p>
+          Charles Babbage diseñó la Máquina Analítica, un concepto de computadora
+          mecánica programable que incorporaba ideas fundamentales como memoria,
+          unidad de cálculo y control mediante instrucciones.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> aunque no llegó a funcionar como una computadora
+          moderna, el concepto de separar almacenamiento, procesamiento e instrucciones
+          anticipó la arquitectura que posteriormente utilizarían las computadoras
+          electrónicas.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">1940–1950</span>
+        <h3>Primeras computadoras electrónicas</h3>
+        <p>
+          Durante esta etapa aparecieron grandes sistemas electrónicos basados en
+          tubos de vacío y posteriormente en transistores. Las máquinas pasaron de
+          conceptos mecánicos a realizar cálculos electrónicos a gran velocidad.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> la electrónica permitió aumentar radicalmente la
+          velocidad de procesamiento, pero los tubos de vacío eran grandes, consumían
+          mucha energía y generaban calor. Esta limitación impulsó la búsqueda de
+          componentes más pequeños y eficientes.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">1947</span>
+        <h3>Invención del transistor</h3>
+        <p>
+          El transistor sustituyó progresivamente a los tubos de vacío en muchas
+          aplicaciones. Era más pequeño, más resistente y consumía menos energía.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> la miniaturización y confiabilidad del transistor
+          hicieron viable construir computadoras más pequeñas y eficientes, preparando
+          el camino para integrar numerosos componentes electrónicos en un solo chip.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">1958–1960</span>
+        <h3>Circuitos integrados</h3>
+        <p>
+          Los circuitos integrados permitieron colocar múltiples componentes
+          electrónicos en una misma pieza de material semiconductor. Esto incrementó
+          la densidad y redujo el tamaño de los sistemas electrónicos.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> al poder integrar cada vez más transistores en
+          espacios reducidos, se creó la base tecnológica para fabricar procesadores
+          completos en un solo circuito.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">1971</span>
+        <h3>Intel 4004: el microprocesador</h3>
+        <p>
+          Intel presentó el 4004, reconocido como el primer microprocesador comercial.
+          Integró la unidad central de procesamiento en un solo chip.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> concentrar el procesamiento en un chip redujo
+          considerablemente el tamaño y el costo potencial de las computadoras. Esto
+          impulsó el desarrollo de calculadoras, microcomputadoras y posteriormente
+          computadoras personales.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">1969</span>
+        <h3>ARPANET y el inicio de las redes modernas</h3>
+        <p>
+          ARPANET conectó computadoras de diferentes instituciones y permitió compartir
+          recursos digitales a distancia. En 1969 se establecieron sus primeros cuatro
+          nodos.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> la computación dejó de depender únicamente de una
+          máquina aislada. La comunicación entre computadoras creó la infraestructura
+          conceptual y técnica que posteriormente evolucionaría hacia Internet.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">1981</span>
+        <h3>IBM PC y popularización de la computadora personal</h3>
+        <p>
+          El IBM 5150 ayudó a convertir la computadora personal en una herramienta
+          práctica para empresas, estudiantes y usuarios. El crecimiento del mercado
+          también impulsó el desarrollo de software y periféricos.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> al aumentar la cantidad de personas y organizaciones
+          utilizando computadoras, creció la necesidad de conectarlas y de intercambiar
+          información de manera sencilla, acelerando la expansión de las redes.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">1989–1993</span>
+        <h3>World Wide Web</h3>
+        <p>
+          Tim Berners-Lee desarrolló la World Wide Web en CERN a partir de 1989 para
+          facilitar el intercambio de información entre investigadores. En 1993,
+          CERN puso el software de la Web en el dominio público.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> Internet proporcionaba la conexión entre equipos,
+          mientras que la Web aportó una forma sencilla de organizar y consultar
+          información mediante páginas e hipervínculos. Esto favoreció su expansión
+          hacia el público general.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">1990–2000</span>
+        <h3>Expansión de Internet y servicios digitales</h3>
+        <p>
+          El crecimiento de navegadores, buscadores, correo electrónico, sitios web y
+          comercio electrónico convirtió Internet en una plataforma cotidiana para
+          comunicación, información y negocios.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> el aumento masivo de información digital generó la
+          necesidad de servidores más potentes, mayores capacidades de almacenamiento
+          y nuevas formas de acceder a los datos desde diferentes lugares.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">2000–2010</span>
+        <h3>Web 2.0, movilidad y redes sociales</h3>
+        <p>
+          La Web evolucionó de páginas principalmente informativas hacia plataformas
+          interactivas donde los usuarios podían crear contenido, comunicarse y
+          colaborar. Paralelamente, los teléfonos inteligentes hicieron posible acceder
+          a servicios digitales desde cualquier lugar.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> la enorme cantidad de usuarios y datos generados
+          por servicios digitales impulsó la necesidad de infraestructura flexible y
+          escalable, favoreciendo la adopción de la computación en la nube.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">2006–2010</span>
+        <h3>Computación en la nube</h3>
+        <p>
+          La nube permitió utilizar capacidad de cómputo, almacenamiento y aplicaciones
+          a través de Internet sin que todo el procesamiento tuviera que realizarse
+          localmente en el dispositivo del usuario.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> la nube hizo posible escalar servicios digitales
+          con mayor flexibilidad y mantener grandes cantidades de información
+          disponibles desde distintos dispositivos, preparando el terreno para
+          ecosistemas conectados y análisis masivo de datos.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">2010–2020</span>
+        <h3>Internet de las cosas y Big Data</h3>
+        <p>
+          Sensores y dispositivos conectados comenzaron a producir grandes cantidades
+          de datos sobre máquinas, hogares, vehículos y procesos. Las organizaciones
+          desarrollaron sistemas para almacenar y analizar esa información.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> disponer de enormes volúmenes de datos creó una
+          materia prima ideal para algoritmos de aprendizaje automático, capaces de
+          encontrar patrones y realizar predicciones a partir de información digital.
+        </p>
+      </article>
+
+      <article class="event">
+        <span class="year">2020–actualidad</span>
+        <h3>Inteligencia artificial generativa</h3>
+        <p>
+          Los avances en aprendizaje automático, redes neuronales, grandes conjuntos
+          de datos y capacidad de cómputo han permitido sistemas capaces de generar
+          texto, imágenes, audio, código y otros contenidos.
+        </p>
+        <p class="connection">
+          <strong>Conexión:</strong> la inteligencia artificial representa una etapa
+          que aprovecha prácticamente toda la cadena anterior: microprocesadores para
+          calcular, redes para comunicar, nube para escalar, almacenamiento para
+          conservar datos y Big Data para entrenar modelos. Así, la evolución de TI
+          pasa de simplemente almacenar y transmitir información a ayudar a
+          interpretarla y generarla.
+        </p>
+      </article>
+
+    </div>
+
+    <h2>Conclusión</h2>
+    <p class="intro">
+      La evolución de la Tecnología de la Información puede entenderse como una cadena
+      de soluciones. La computación mecánica aportó conceptos de automatización y
+      programación; la electrónica aumentó la velocidad; el transistor y los circuitos
+      integrados hicieron posible la miniaturización; el microprocesador llevó el
+      procesamiento a dispositivos más accesibles; las redes conectaron las
+      computadoras; la Web facilitó el acceso a la información; la movilidad y la
+      nube ampliaron el acceso y la capacidad de los servicios; y el Big Data generó
+      las condiciones para sistemas avanzados de inteligencia artificial.
+    </p>
+    <p class="intro">
+      Por lo tanto, las tecnologías actuales no aparecieron de manera independiente.
+      Cada una heredó conocimientos, infraestructura y problemas de la etapa anterior.
+      La historia de TI muestra que la innovación ocurre cuando una tecnología
+      resuelve una limitación existente y, al mismo tiempo, crea nuevas posibilidades
+      para la siguiente generación.
+    </p>
+
+    <h2>Referencias</h2>
+    <div class="references">
+      <p>Computer History Museum. (s. f.). <em>Timeline of computer history</em>. https://www.computerhistory.org/timeline/</p>
+      <p>Computer History Museum. (s. f.). <em>The Silicon Engine: A timeline of semiconductors in computers</em>. https://www.computerhistory.org/siliconengine/</p>
+      <p>Defense Advanced Research Projects Agency. (2020). <em>ARPANET</em>. https://www.darpa.mil/news/features/arpanet</p>
+      <p>IBM. (s. f.). <em>The IBM PC</em>. https://www.ibm.com/history/personal-computer</p>
+      <p>CERN. (s. f.). <em>The birth of the Web</em>. https://home.cern/science/computing/the-birth-of-the-web/</p>
+    </div>
+
+    <footer>
+      Línea del tiempo elaborada con enfoque de continuidad tecnológica · Formato académico inspirado en APA 7.ª edición
+    </footer>
+  </section>
+</main>
+</body>
+</html>
